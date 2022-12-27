@@ -13,7 +13,7 @@ export class PcServeService {
 
     let sub = new Subject<Pc[]>();
 
-    let urlService = `http://localhost:4200/assets/pcs.json`; //on cree l'url du json
+    let urlService = `https://smartpurchase.netlify.app/assets/pcs.json`; //on cree l'url du json
 
     this.http.get<Pc[]>(urlService).subscribe( //on recupere les donnees du json  et on les met dans la variable pcListe 
       (pc: Pc[]) => {
