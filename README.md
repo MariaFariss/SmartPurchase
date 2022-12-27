@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+This project is done by angular, it's called SmartPurchse inorder to help the user to find the right pc componant. this project does not contain any node module, so when you download this project you need first to enter this comment in your terminal : "npm install" or "npm update". Then you need to open the server by running this command : ng serve --open.
+and here is the link : https://smart-purchase.netlify.app/
