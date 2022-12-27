@@ -1,0 +1,32 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 25px 25px;
+  background: #4F495A;
+  box-shadow: inset 0px 8px 0px #3B3743;
+  color: white;
+  justify-content: space-between;
+}
+
+img {
+  margin: auto 7px auto 7px;
+  width: 20px;
+}
+
+.titleFooter {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.contact {
+  margin: auto 50px auto 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.res {
+  margin: auto 50px auto 50px;
+}

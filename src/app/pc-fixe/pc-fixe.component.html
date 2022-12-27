@@ -1,0 +1,8 @@
+<app-nav-bar></app-nav-bar>
+<h4>• Ordinateurs fixes</h4>
+<div class="container">
+    <ng-container *ngFor="let e of pcListe" > <!--on parcours la liste des pcs--> 
+        <app-pc-componant *ngIf = "e.type=='fixe'" [pc]="e"></app-pc-componant> <!--on verifie si le pc est fixe ou portable et on l'affiche-->
+    </ng-container>           
+</div>
+<app-footer></app-footer>

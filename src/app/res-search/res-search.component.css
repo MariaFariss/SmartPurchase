@@ -1,0 +1,13 @@
+.container {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    padding: 10px;
+    background-color: #E6E6E6;
+    filter: drop-shadow(4px 4px 3px #E0E0E0);
+}   

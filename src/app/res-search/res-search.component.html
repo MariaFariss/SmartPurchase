@@ -1,0 +1,8 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <div *ngFor="let element of pcListe"> <!--on parcours la liste des pcs-->
+        <app-pc-componant *ngIf=" optimiseSearch(element, query)" [pc]="element"></app-pc-componant> <!--on affiche les pcs qui correspond a ce qui est entre dans le champ de recherche(querry)-->
+    </div>
+</div>
+<app-footer></app-footer>
+

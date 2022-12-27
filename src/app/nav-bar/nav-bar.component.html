@@ -1,0 +1,31 @@
+<nav>
+    <!--logo du site-->
+    <a href="#" class="nav-icon" aria-label="visit homepage" aria-current="page"> 
+        <img src="assets/logo.svg" alt="Smart Purchase icon">
+    </a>
+
+    <!--menu de navigation-->
+    <div class="main-navlink">
+        <button class="hamburger" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navlinks-container">
+            <a href="#" aria-current="page">Acceuil</a>
+            <a [routerLink]="['/carteGraphique']" [queryParams]="{debug: true}">Cartes graphiques</a>
+            <a [routerLink]="['/pcPortable']" [queryParams]="{debug: true}">Ordinateurs portables</a>
+            <a [routerLink]="['/pcFixe']" [queryParams]="{debug: true}">Ordinateurs fixes</a>
+        </div> 
+    </div>
+    
+   <!--formulaire de recherche dans le site -->
+    <div class="nav-search"> 
+        <form [formGroup]="searchFormGroup" (ngSubmit)="onSubmit()">  
+        <input type="search" class="aera-search" formControlName="search"/>
+        <button class="button-search" type ="submit" >
+            <img src="assets/search.svg" alt="search icon" class="search" aria-label="Search in website" aria-expanded="false">
+        </button> 
+        </form>  
+    </div>
+</nav>

@@ -1,0 +1,8 @@
+<app-nav-bar></app-nav-bar>
+<h4>• Ordinateurs portables</h4>
+<div class="container">
+    <ng-container *ngFor="let e of pcListe" >  <!--on parcours la liste des pcs-->
+        <app-pc-componant *ngIf = "e.type=='portable'" [pc]="e"></app-pc-componant>  <!--on affiche les pcs portables--> 
+    </ng-container>           
+</div>
+<app-footer></app-footer>
